@@ -1,0 +1,80 @@
+{% extends "polls/template_sale.html" %}
+{% load static %}
+{% block main %}
+
+    <link rel="stylesheet" href= {% static "polls/css/global.css" %} />
+    <link rel="stylesheet" href= {% static "polls/css/sale_item.css" %}/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    />
+
+        <main class="body">
+          <div class="body-child"></div>
+          <img
+            class="photo-2023-04-05-11-48-26-1-icon"
+            alt=""
+            src={% static "polls/img/mors_page_grad.jpg" %}
+          />
+
+          <img class="sale20" alt="" src={% static "polls/img/sale20.svg" %} />
+
+          <div class="body-item"></div>
+          <img
+            class="glitch-sauce-icon"
+            alt=""
+            src={% static "polls/img/text_mors.svg" %}
+          />
+
+
+
+          <button class="button5">
+            <p class="p">Лесные ягоды,</p>
+            <p class="p">30 мл</p>
+          </button>
+          <button class="button6">
+            <p class="p">Жимолость&облепиха,</p>
+            <p class="p">30 мл</p>
+          </button>
+          <button class="button7">
+            <p class="p">Клубника&гранат,</p>
+            <p class="p">120 мл</p>
+          </button>
+          <button class="button8">
+            <p class="p">Клубника&гранат,</p>
+            <p class="p">30 мл</p>
+          </button>
+          <button class="button9">
+            <p class="p">Клюква&малина,</p>
+            <p class="p">30 мл</p>
+          </button>
+          <button class="button10">
+            <p class="p">Микс Алтайский,</p>
+            <p class="p">30 мл</p>
+          </button>
+          <button class="button11">
+            <p class="p">Микс Садовый,</p>
+            <p class="p">30 мл</p>
+          </button>
+          <button class="button12">
+            <p class="p">Микс Фьюжн,</p>
+            <p class="p">30 мл</p>
+          </button>
+          <img class="image-1-icon" alt="" src={% static "polls/img/mors1.png" %} />
+
+          <img class="image-2-icon" alt="" src={% static "polls/img/mors2.png" %}  />
+
+          <img class="image-3-icon" alt="" src={% static "polls/img/mors3.png" %}  />
+
+          <img class="image-4-icon" alt="" src={% static "polls/img/mors4.png" %}  />
+
+          <img class="image-5-icon" alt="" src={% static "polls/img/mors5.png" %} />
+
+          <img class="image-6-icon" alt="" src={% static "polls/img/mors6.png" %}  />
+
+          <img class="image-7-icon" alt="" src={% static "polls/img/mors7.png" %}  />
+
+          <img class="image-8-icon" alt="" src={% static "polls/img/mors8.png" %}  />
+        </main>
+
+{% endblock %}

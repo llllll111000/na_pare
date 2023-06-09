@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href= {% static "polls/css/global.css" %} />
+    <link rel="stylesheet" href= {% static "polls/css/new.css" %}/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
+    />
+  </head>
+  <body>
+  <title>Мама, я за новинками</title>
+    <div class="desktop-2">
+      <main class="body">
+        <div class="body-child"></div>
+        <img
+          class="photo-2023-04-20-13-34-51-1-icon"
+          alt=""
+          src={% static "polls/img/ashki_grad.jpg" %}
+        />
+
+        <div class="body-item"></div>
+        <img class="body-inner" alt="" src={% static "polls/img/middle gradient.svg" %} />
+
+        <img class="icon2" alt="" src={% static "polls/img/postuplenie.svg" %} />
+
+        <img class="hotspot-icon" alt="" src={% static "polls/img/hotspot.svg" %} />
+
+        <img class="hoodie2-2-icon" alt="" src={% static "polls/img/HOODIE1.png" %} />
+
+        <img class="hoodie1-2-icon" alt="" src={% static "polls/img/HOODIE2.png" %} />
+
+        <img class="icon1" alt="" src={% static "polls/img/hvatai.svg" %} />
+      </main>
+      <div class="footer">
+        <div class="footer1">
+          <div class="footer-child"></div>
+          <img class="black-1-1" alt="" src={% static "polls/img/Black 1.png" %} />
+
+          <div class="div">© ОАО «Папа, я на уроке», 2023</div>
+          <div class="div1">
+            Мы получаем и обрабатываем персональные данные посетителей нашего
+            сайта в соответствии с официальной политикой. Если вы не даете
+            согласия на обработку своих персональных данных, вам необходимо
+            покинуть наш сайт.
+          </div>
+          <div class="div2">18+</div>
+        </div>
+      </div>
+      <header class="header">
+        <img class="header-child" alt="" src={% static "polls/img/header_gradient.svg" %}/>
+        <img class="icon" alt="" src={% static "polls/img/mama.svg" %}/>
+
+        <form action="/new" target="_blank">
+          <button class="button">Новинки</button>
+        </form>
+        <form action="/sale" target="_blank">
+          <button class="button1">Скидки</button>
+        </form>
+        <form action="/devices" target="_blank">
+          <button class="button2">Категории</button>
+        </form>
+        <form action="/contact" target="_blank">
+          <button class="button3">Связь</button>
+        </form>
+
+      </header>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href={% static "polls/css/global.css" %} />
+    <link rel="stylesheet" href={% static "polls/css/template.css" %}/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap"
+    />
+  </head>
+ <body>
+    <title>Мама, я на паре</title>
+    <div class="desktop">
+      <main>
+        {% block main %}
+        {% endblock %}
+      </main>
+
+
+      <header class="header">
+        <img class="header-child" alt="" src={% static "polls/img/header_gradient.svg" %}/>
+        <img class="icon" alt="" src={% static "polls/img/mama.svg" %}/>
+
+        <form action="/new" target="_blank">
+          <button class="button1">Новинки</button>
+        </form>
+        <form action="/sale" target="_blank">
+          <button class="button2">Скидки</button>
+        </form>
+        <form action="/devices" target="_blank">
+          <button class="button3">Категории</button>
+        </form>
+        <form action="/contact" target="_blank">
+          <button class="button4">Связь</button>
+        </form>
+      </header>
+
+      <div class="footer">
+        <div class="footer-child"></div>
+        <img class="black-1-1" alt="" src={% static "polls/img/Black 1.png" %}/>
+
+        <div class="div2">© ОАО «Папа, я на уроке», 2023</div>
+        <div class="div3">
+          Мы получаем и обрабатываем персональные данные посетителей нашего
+          сайта в соответствии с официальной политикой. Если вы не даете
+          согласия на обработку своих персональных данных, вам необходимо
+          покинуть наш сайт.
+        </div>
+        <div class="div4">18+</div>
+      </div>
+    </div>
+  </body>
+</html>

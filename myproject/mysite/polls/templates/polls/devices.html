@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+    <link rel="stylesheet" href= {% static "polls/css/global.css" %} />
+    <link rel="stylesheet" href= {% static "polls/css/devices.css" %}/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    />
+  </head>
+  <body>
+    <title>Мама, я на паре</title>
+    <div class="desktop-6">
+      <div class="body">
+        <main class="body">
+          <div class="body-child"></div>
+          <div class="body-item"></div>
+          <img class="body-inner" alt="" src={% static "polls/img/1.jpg" %} />
+          <button class="button">Электронные сигареты</button>
+          <img class="rectangle-icon" alt="" src={% static "polls/img/2.jpg" %} />
+          <button class="button1">Жидкости</button>
+          <img class="body-child1" alt="" src={% static "polls/img/3.jpg" %} />
+          <button class="button2">Зарядные устройства</button>
+          <img class="body-child2" alt="" src={% static "polls/img/4.jpg" %} />
+          <button class="button3">Аксессуары</button>
+          <img class="body-child3" alt="" src={% static "polls/img/5.jpg" %} />
+          <button class="button4">Мерч</button>
+        </main>
+      </div>
+      <div class="footer">
+        <div class="footer1">
+          <div class="footer1">
+            <footer class="footer3">
+              <div class="footer-child"></div>
+              <img class="black-1-1" alt="" src={% static "polls/img/Black 1.png" %}/>
+
+              <div class="div">© ОАО «Папа, я на уроке», 2023</div>
+              <div class="div1">
+                Мы получаем и обрабатываем персональные данные посетителей
+                нашего сайта в соответствии с официальной политикой. Если вы не
+                даете согласия на обработку своих персональных данных, вам
+                необходимо покинуть наш сайт.
+              </div>
+              <div class="div2">18+</div>
+            </footer>
+          </div>
+        </div>
+      </div>
+      <div class="header">
+        <div class="footer1">
+          <header class="footer1">
+            <header class="footer1">
+              <img class="header-child" alt="" src={% static "polls/img/header_gradient.svg" %}/>
+              <img class="icon" alt="" src={% static "polls/img/mama.svg" %}/>
+              <form action="/new" target="_blank">
+                <button class="button5">Новинки</button>
+              </form>
+              <form action="/sale" target="_blank">
+                <button class="button6">Скидки</button>
+              </form>
+              <form action="/devices" target="_blank">
+                <button class="button7">Категории</button>
+              </form>
+              <form action="/contact" target="_blank">
+                <button class="button8">Связь</button>
+              </form>
+            </header>
+          </header>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

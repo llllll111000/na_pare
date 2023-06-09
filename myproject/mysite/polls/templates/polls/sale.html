@@ -1,0 +1,49 @@
+{% extends "polls/template_sale.html" %}
+{% load static %}
+{% block main %}
+<!DOCTYPE html>
+
+    <link rel="stylesheet" href= {% static "polls/css/global.css" %} />
+    <link rel="stylesheet" href= {% static "polls/css/sale.css" %}/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap"
+    />
+
+
+      <main class="body">
+        <div class="body-child"></div>
+        <img
+          class="photo-2023-04-05-11-48-26-1-icon"
+          alt=""
+          src={% static "polls/img/liquid_grad.jpg" %}
+        />
+
+        <img class="smth" alt="" src={% static "polls/img/tovar_nedeli.svg" %} />
+
+        <div class="body-item"></div>
+        <button class="glitch-sauce">жидкость Glitch Sauce</button>
+
+
+        <img
+          class="photo-2023-03-27-00-09-51-1-icon"
+          alt=""
+          src={% static "polls/img/mors.png" %}
+        />
+
+        <img
+          class="photo-2023-03-27-00-09-51-2-icon"
+          alt=""
+          src={% static "polls/img/rell.png" %}
+        />
+
+        <form action="/sale_item" target="_blank">
+          <button class="button">Скидка 20% на жидкость МОРС</button>
+        </form>
+        <button class="rell-orange-salt-container">
+          <p class="p">Скидка 10% на жидкость</p>
+          <p class="p">RELL Orange SALT</p>
+        </button>
+      </main>
+
+{% endblock %}
